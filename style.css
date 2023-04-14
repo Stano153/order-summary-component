@@ -90,7 +90,7 @@
     .price {
         margin-right: 3rem;
     }
-    .price h3 {
+    .price h2 {
         font-size: 0.8rem;
         font-weight: 900;
         color: var(--clr-dblue);
