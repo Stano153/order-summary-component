@@ -1,0 +1,184 @@
+:root {
+    --clr-paleb:hsl(225, 100%, 94%);
+    --clr-brightb:hsl(245, 75%, 52%);
+    --clr-vpb:hsl(225, 100%, 98%);
+    --clr-desaturatedb:hsl(224, 23%, 55%);
+    --clr-dblue:hsl(223, 47%, 23%);
+    --font-main:'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+    body {
+        font-family: 'Red Hat Display', sans-serif;
+        color: #000;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: url(./images/pattern-background-mobile.svg) no-repeat;
+        background-size: contain;
+        background-color: var(--clr-paleb);
+    }
+
+
+    .card {
+        text-align: center;
+        border-radius: 15px;
+        background-color: #fff;
+        width: 320px;
+        margin: 1rem 0;
+    }
+
+    .content {
+        padding: 1.8rem 1.5rem;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    /*CONTENT */
+    /*SUMMARY */
+    
+    .summary {
+        padding: 0 0.8rem;
+        font-size: 5rem;
+        line-height: 1.5rem;
+    }
+
+    .summary p {
+        color: var(--clr-desaturatedb);
+        font-size: 0.9rem;
+    }
+
+    .summary h1 {
+        color: var(--clr-dblue);
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    /*PRICING */
+
+    .pricing {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        background-color: var(--clr-vpb);
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 15px;
+    }
+
+
+    .icon img {
+        width: 36px;
+    }
+
+    .price {
+        margin-right: 3rem;
+    }
+    .price h3 {
+        font-size: 0.8rem;
+        font-weight: 900;
+        color: var(--clr-dblue);
+    }
+
+    .price p {
+        font-size: 0.8rem;
+        color: var(--clr-desaturatedb);
+    }
+
+
+    .change a {
+        color: var(--clr-brightb);
+        transition: 0.3s ease;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+
+    .change a:hover {
+        color: var(--clr-desaturatedb);
+        text-decoration: none;
+    }
+
+    button {
+        font-family: var(--font-main);
+    }
+
+    /*BUTTON*/
+
+    .proceed button{
+        color:#fff;
+        background-color: var(--clr-brightb);
+        box-shadow: 1px 5px 25px var(--clr-dblue);
+        border: none;
+        
+
+        font-weight: 700;
+        font-size: 0.8rem;
+
+        border-radius: 8px;
+        padding: 0.8rem ;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+
+    .proceed button:hover {
+        box-shadow: none;
+        background-color: var(--clr-desaturatedb);
+    }
+
+    .cancel button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: var(--clr-desaturatedb);
+        font-weight: 700;
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+        transition: 0.3s ease;
+    }
+
+    .cancel button:hover {
+        color: var(--clr-dblue);
+    }
+
+
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        font-family: 'Red Hat Display', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(./images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+        background-color: var(--clr-paleb);
+    }
+
+    .card {
+        text-align: center;
+        border-radius: 15px;
+        background-color: #fff;
+        width: 350px;
+    }
+
+
+
+}
